@@ -12,7 +12,7 @@ module.exports = {
         type: Sequelize.STRING,
       },
 
-      product_id: {
+      productId: {
         type: Sequelize.INTEGER,
         references: {
           model: "products",
@@ -21,7 +21,7 @@ module.exports = {
         onUpdate: "CASCADE",
         onDelete: "SET NULL",
       },
-      category_id: {
+      categoryId: {
         type: Sequelize.INTEGER,
       },
       createdAt: {
