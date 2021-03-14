@@ -8,6 +8,9 @@ const orderRouter = require("./routers/orders");
 
 const app = express();
 
+const cors = require("cors");
+app.use(cors());
+
 //Body Parser
 app.use(express.json());
 
